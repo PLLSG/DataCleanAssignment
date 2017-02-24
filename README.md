@@ -1,8 +1,8 @@
 ## Data Science Specialization - Getting and Cleaning Data course project
 The purpose of this project is to demonstrate ability to collect, work with, and clean a data set. 
-The goal is to prepare tidy data that can be used for later analysis.
-Author:  PLLSG
-Date:  23-Feb-2017
+The goal is to prepare tidy data that can be used for later analysis.    
+Author:  PLLSG    
+Date:  23-Feb-2017    
 
 
 ###COURSE PROJECT OVERVIEW
@@ -42,28 +42,22 @@ run_analysis.R script has been coded to take the following steps :-
 
 
 ####Final tidy data set
-Full filename saved:    "./course_data/AvgMeasures_by_Subject+Activity.txt"
+Full filename saved:-    *"./course_data/AvgMeasures_by_Subject+Activity.txt"*
 
 
 
 ###COURSE PROJECT REQUIREMENTS
-1.  Merges the training and the test sets to create one data set.
+1.  Merges the training and the test sets to create one data set    
+    This was achieved in step f) of the data analysis process described above.
 
-     This was achieved in step f) of the data analysis process described above.
+2.  Extracts only the measurements on the mean and standard deviation for each measurement    
+    From the descriptive measurement variable names provided in the features.txt file, it was possible to correctly identify those columns with names containing "mean()" and "std()" as pertaining to the measurements on mean and standard deviation.
 
-2.  Extracts only the measurements on the mean and standard deviation for each measurement.
+3.  Uses descriptive activity names to name the activities in the data set    
+    Using the activity_labels.txt file provided, it facilitated mapping to the corresponding activity label in the test and training data sets to derive the descriptive activity name.
 
-     From the descriptive measurement variable names provided in the features.txt file, it was possible to correctly identify those columns with names containing "mean()" and "std()" as pertaining to the measurements on mean and standard deviation.
+4.  Appropriately labels the data set with descriptive variable names    
+    All the data columns in the resulting data set have been labelled with appropriate descriptive names to reflect the meaning of the variables. In particular, the names of the measurement variables are adopted from those provided by the features.txt file.
 
-3.  Uses descriptive activity names to name the activities in the data set
-
-     Using the activity_labels.txt file provided, it facilitated mapping to the corresponding activity label in the test and training data sets to derive the descriptive activity name.
-
-4.  Appropriately labels the data set with descriptive variable names.
-
-     All the data columns in the resulting data set have been labelled with appropriate descriptive names to reflect the meaning of the variables. In particular, the names of the measurement variables are adopted from those provided by the features.txt file.
-
-5.  From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-
-     This was achieved as the result shows the computed mean values of every measurement variable on mean and standard deviation for each unique subject and activity.
-     The final data set also complies with the tidy data set criteria as each row represents a specific subject performing a specific activity without any repetition. Also, every measurement variable is in its own column.
+5.  From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject    
+    This was achieved as the result shows the computed mean values of every measurement variable on mean and standard deviation for each unique subject and activity. The final data set also complies with the tidy data set criteria as each row represents a specific subject performing a specific activity without any repetition. Also, every measurement variable is in its own column.
