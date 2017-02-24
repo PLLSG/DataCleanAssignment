@@ -13,10 +13,10 @@ Following describes the final tidy data set resulting from the analysis
 DATA SET OVERVIEW
 -----------------
 ###Final tidy data set
-Filename:    ./course_data/AvgMeasures_by_Subject+Activity.txt    
-Class:       data.frame    
-Dimensions:  180 rows, 68 columns    
-Sorted by:   Subject (numerical order), Activity (alphabetical order)
+Filename:    **"./course_data/AvgMeasures_by_Subject+Activity.txt"**    
+Class:       **data.frame**    
+Dimensions:  **180 rows, 68 columns**    
+Sorted by:   **Subject (numerical order), Activity (alphabetical order)**
 
 The raw data was sourced from the Human Activity Recognition Using Smartphones Dataset. Based on experiments carried out by 30 volunteers (labelled as Subject), each person performed a set of 6 activities (Walking, Walking Upstairs, Walking Downstairs, Sitting, Standing and Laying), wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, measurements in time and frequency domain variables were recorded, identified by the subject and the specific activity. 
 
@@ -26,11 +26,11 @@ Per the requirements of this course project, the given analysis process steps pe
 DATA VARIABLES
 --------------
 ###Explanation of variable names
-Subject - unique identifier for each of the 30 volunteers    
-Activity - depicts the activity done by the volunteer    
-*t.., f..* - measurements derived from accelerometer and gyroscope 3-axial raw signals
+"Subject" - unique identifier for each of the 30 volunteers    
+"Activity" - depicts the activity done by the volunteer    
+*"t..", "f.."* - measurements derived from accelerometer and gyroscope 3-axial raw signals
 
-###Components of measurement variable names
+####Components of measurement variable names
 - time domain signals (prefix 't' to denote time)
 - body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ)
 - body linear acceleration and angular velocity derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ)
@@ -40,13 +40,10 @@ Activity - depicts the activity done by the volunteer
 - estimated signal values using '-mean()': Mean value or '-std()': Standard deviation
 
 
-<table border="0">
+<table>
 <tr><td>    </td><td>DATA COLUMN                     </td><td>DATA TYPE</td></tr>
-<tr><td>    </td><td>===========                     </td><td>=========</td></tr>
 <tr><td>1   </td><td>Subject                         </td><td>Factor with 30 levels: 1, 2, 3, 4, .... 28, 29, 30</td></tr>
-<tr><td>2   </td><td>Activity                        </td><td>Factor with 6 levels: LAYING, SITTING, STANDING, </td></tr>
-<tr><td>    </td><td>                                </td><td>                      WALKING, WALKING_DOWNSTAIRS,</td></tr>
-<tr><td>    </td><td>                                </td><td>                      WALKING_UPSTAIRS</td></tr>
+<tr><td>2   </td><td>Activity                        </td><td>Factor with 6 levels: LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS</td></tr>
 <tr><td>3   </td><td>tBodyAcc-mean()-X               </td><td>numeric</td></tr>
 <tr><td>4   </td><td>tBodyAcc-mean()-Y               </td><td>numeric</td></tr>
 <tr><td>5   </td><td>tBodyAcc-mean()-Z               </td><td>numeric</td></tr>
